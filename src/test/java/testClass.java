@@ -22,4 +22,14 @@ public class testClass {
 
         Assert.assertEquals(expected, romanEquivalent);
     }
+
+    @Test
+    public void test3() {
+        int input = 4;
+
+        String romanEquivalent = IntToRomanConverter.convert(input);
+        String expected = "IV";
+
+        Assert.assertEquals(expected, romanEquivalent);
+    }
 }
