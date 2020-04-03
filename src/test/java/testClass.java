@@ -4,6 +4,11 @@ import org.junit.Test;
 public class testClass {
 
     @Test
+    public void testNegativeInput() {
+        
+    }
+
+    @Test
     public void test1() {
         int input = 1;
 
