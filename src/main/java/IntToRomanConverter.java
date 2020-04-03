@@ -10,7 +10,11 @@ public class IntToRomanConverter {
         }
     };
 
-    public static String convert(int input) {
-        return intToRomanMap.get(input);
+    public static String convert(int input) throws InvalidInputException {
+        if (intToRomanMap.containsKey(input)) {
+            return intToRomanMap.get(input);
+        } else {
+            throw new InvalidInputException();
+        }
     }
 }

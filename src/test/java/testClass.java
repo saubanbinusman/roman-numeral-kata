@@ -3,13 +3,14 @@ import org.junit.Test;
 
 public class testClass {
 
-    @Test
-    public void testNegativeInput() {
-        
+    @Test(expected = InvalidInputException.class)
+    public void testNegativeInput() throws InvalidInputException {
+        int input = -1;
+        IntToRomanConverter.convert(input);
     }
 
     @Test
-    public void test1() {
+    public void test1() throws InvalidInputException {
         int input = 1;
 
         String romanEquivalent = IntToRomanConverter.convert(input);
@@ -19,7 +20,7 @@ public class testClass {
     }
 
     @Test
-    public void test2() {
+    public void test2() throws InvalidInputException {
         int input = 2;
 
         String romanEquivalent = IntToRomanConverter.convert(input);
@@ -29,7 +30,7 @@ public class testClass {
     }
 
     @Test
-    public void test3() {
+    public void test3() throws InvalidInputException {
         int input = 4;
 
         String romanEquivalent = IntToRomanConverter.convert(input);
