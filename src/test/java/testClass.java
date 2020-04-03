@@ -31,10 +31,30 @@ public class testClass {
 
     @Test
     public void test3() throws InvalidInputException {
+        int input = 3;
+
+        String romanEquivalent = IntToRomanConverter.convert(input);
+        String expected = "III";
+
+        Assert.assertEquals(expected, romanEquivalent);
+    }
+
+    @Test
+    public void test4() throws InvalidInputException {
         int input = 4;
 
         String romanEquivalent = IntToRomanConverter.convert(input);
         String expected = "IV";
+
+        Assert.assertEquals(expected, romanEquivalent);
+    }
+
+    @Test
+    public void test9() throws InvalidInputException {
+        int input = 9;
+
+        String romanEquivalent = IntToRomanConverter.convert(input);
+        String expected = "IX";
 
         Assert.assertEquals(expected, romanEquivalent);
     }

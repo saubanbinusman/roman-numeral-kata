@@ -6,7 +6,9 @@ public class IntToRomanConverter {
         {
             put(1, "I");
             put(2, "II");
+            put(3, "III");
             put(4, "IV");
+            put(9, "IX");
         }
     };
 
