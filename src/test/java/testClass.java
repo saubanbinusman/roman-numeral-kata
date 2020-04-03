@@ -58,4 +58,14 @@ public class testClass {
 
         Assert.assertEquals(expected, romanEquivalent);
     }
+
+    @Test
+    public void test38() throws InvalidInputException {
+        int input = 38;
+
+        String romanEquivalent = IntToRomanConverter.convert(input);
+        String expected = "XXXVIII";
+
+        Assert.assertEquals(expected, romanEquivalent);
+    }
 }
